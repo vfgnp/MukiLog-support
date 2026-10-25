@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; --accent: #FF6B2E; --bg: #F7F4F2; --fg: #2B2422; --sub: #85776F; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1C1917; --fg: #F2ECE8; --sub: #A89A92; } }
+body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+       max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+       color: var(--fg); background: var(--bg); line-height: 1.9; }
+h1 { font-size: 1.5rem; color: var(--accent); }
+h2 { font-size: 1.1rem; margin-top: 2em; border-left: 4px solid var(--accent); padding-left: 10px; }
+footer { margin-top: 3em; font-size: .85rem; color: var(--sub); }
+a { color: var(--accent); }
