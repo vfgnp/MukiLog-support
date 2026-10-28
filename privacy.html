@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>ムキログ プライバシーポリシー</h1>
-<p>最終更新日: 2026年10月25日</p>
+<p>最終更新日: 2026年10月28日</p>
 
 <h2>基本方針 — データは収集しません</h2>
 <p>ムキログ(以下「本アプリ」)は、スクワットと腕立て伏せの回数を数えて記録する iOS アプリです。本アプリには開発者のサーバーやバックエンドが存在せず、<strong>開発者がお客様のデータを収集・送信・閲覧することは一切ありません</strong>。本アプリはネットワーク通信を行いません。</p>
@@ -24,10 +24,26 @@
 <h2>利用するセンサー</h2>
 <ul>
   <li><strong>モーションセンサー(加速度・ジャイロ)</strong> — スクワットの動きを検出するために、トレーニング中だけ使用します。動きのデータは回数の判定にだけ使い、保存しません。</li>
-  <li><strong>前面カメラ(TrueDepth)</strong> — 腕立て伏せのときだけ、顔との距離を測るために使用します(ご本人の許可が必要です)。映像は端末の中で距離の計算にだけ使い、保存・送信・画面表示はしません。許可しない場合も、画面に触れる方法で腕立て伏せを数えられます。</li>
+  <li><strong>前面カメラ(TrueDepth)</strong> — 腕立て伏せのときだけ、顔との距離を測るために使用します(ご本人の許可が必要です)。映像は端末の中で距離の計算にだけ使い、保存・送信・画面表示はしません。許可しない場合も、画面に触れる方法で腕立て伏せを数えられます。詳しくは<a href="#face-data">「顔データ(TrueDepth カメラ)の取り扱い」</a>をご覧ください。</li>
   <li><strong>近接センサー</strong> — 腕立て伏せで顔が近づいたことを検出するため(カメラを使わない場合)、またポケットの中で画面を消して誤操作を防ぐために、トレーニング中だけ使用します。</li>
 </ul>
 <p>マイク・位置情報・連絡先・ヘルスケアなどは使用しません。</p>
+
+<h2 id="face-data">顔データ(TrueDepth カメラ)の取り扱い</h2>
+<ul>
+  <li><strong>取得する情報</strong> — 腕立て伏せの計測中と、設定の「センサーの動作確認」画面を開いている間だけ、Apple の ARKit(TrueDepth カメラによる顔トラッキング)が推定した顔の位置から、<strong>顔と iPhone の距離(1つの数値)</strong>だけを計算します。カメラの映像、写真、顔の形状(メッシュ)、表情、特徴点などの顔データを本アプリが記録・保存することはありません。顔の認証や個人の識別にも使いません。</li>
+  <li><strong>利用目的</strong> — 顔が近づいて離れたことを検出し、腕立て伏せの回数を数えるためだけに使います。「センサーの動作確認」画面では、正しく測れているかを確かめるために距離の数値を表示します(映像は表示しません)。それ以外の目的には使いません。</li>
+  <li><strong>保持と削除</strong> — 距離の値は端末のメモリ上で毎フレームその場で使い、すぐに破棄します。ストレージには保存せず、トレーニングの記録として残るのは種目・回数・日時だけです。計測を終えるか画面を閉じると、カメラは停止します。</li>
+  <li><strong>共有と保存場所</strong> — 顔データおよび距離の値は、開発者を含む第三者に提供・送信せず、クラウドにも保存しません。すべての処理は端末の中だけで完結します。広告・解析にも使いません。</li>
+</ul>
+
+<h2 lang="en">Face Data (TrueDepth Camera) — English</h2>
+<ul lang="en">
+  <li><strong>What is collected</strong> — Only while counting push-ups, or while the Settings &gt; センサーの動作確認 (sensor check) screen is open, the app uses Apple's ARKit face tracking (TrueDepth camera) and computes a single value: <strong>the distance between the user's face and the iPhone</strong>. The app does not record or store camera images, photos, face geometry (mesh), expressions, landmarks or any other face data, and does not use it for authentication or identification.</li>
+  <li><strong>Purpose</strong> — The distance is used solely to detect the face moving closer and away, in order to count push-up repetitions. On the sensor check screen, the distance number is shown so the user can confirm it works (no camera image is shown). It is not used for any other purpose.</li>
+  <li><strong>Retention and deletion</strong> — The distance is processed in memory frame by frame and discarded immediately. It is never written to storage; the only workout data saved is the exercise type, the rep count and the date/time. The camera stops when the workout ends or the screen is closed.</li>
+  <li><strong>Sharing and storage location</strong> — Face data and the distance value are never shared with or sent to any third party, including the developer, and are never stored in the cloud. All processing happens on the device. They are not used for advertising or analytics.</li>
+</ul>
 
 <h2>第三者への提供・広告・解析</h2>
 <p>本アプリは、広告 SDK・アクセス解析・クラッシュレポート送信などの第三者サービスを一切利用していません。アカウント登録もありません。</p>
